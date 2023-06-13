@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    background-color: #fffef3;
+}
+
+/*header igual en todas las paginas*/
+
+.logo {
+    margin-left: 50px;
+}
+ .logo img {
+    width: 80px;
+    height: 80px;
+ }
+
+header {
+    font-family: 'Courier Prime', monospace;
+    background-color: #202020;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 20% 60% 20%;
+    padding: 10px;
+    top: 0%;
+}
+
+.headerContent {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*nav*/
+
+nav a {
+    font-family: 'Courier Prime', monospace;
+    color: #ab919e;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+nav ul {
+    font-family: 'Courier Prime', monospace;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+/*barra de busqueda*/
+.busqueda {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    width: 80%;
+    height: 50px;
+    align-items: center;
+    background: rgb(253, 253, 253);
+    border-radius: 60px;
+    padding: 1px;
+    display: flex;
+    border: 1px solid black;
+    align-content: baseline;
+    align-self: center;
+    margin-left: 20px;
+
+}
+
+.search-bar input {
+    border: 0;
+    flex: 1;
+    outline: none;
+    padding-left: 10px;
+    font-size: 20px;
+    color: rgb(3, 0, 2);
+    width: 100%;
+    max-width: 700px;
+    align-items: center;
+    background: transparent;
+    border: 1;
+    align-content: center;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: #ab919e;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.comprasCuenta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+ 
+.comprasCuenta ul li {
+    text-decoration: none;
+    color: #ab919e;
+    list-style: none;
+    padding: 1px;
+}
+
+/*index*/
+
+/*main*/
+
+main a {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.intro {
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.intro span {
+    font-weight: bold;
+}
+
+#productosection {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.productodiv {
+    background-color: white;
+    color: black;
+    width: 250px;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#locales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+.divlocales {
+    flex-direction: row;
+}
+
+.divlocales p {
+    font-size: 20px;
+    text-align: left;
+    margin: 20px;
+}
+
+.divlocales h1 {
+    text-align: left;
+}
+
+#locales img {
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+}
+
+#nuevaColeccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+    background-color: #f3eef1;
+}
+
+#nuevaColeccion img {
+    width: 500px;
+    height: 500px;
+    background-color: #f3eef1;
+    margin-left: 170px;
+}
+
+.divNuevaColeccion {
+    flex-direction: row;
+}
+
+.divNuevaColeccion h1 {
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.divNuevaColeccion p {
+    text-align: left;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.decolink a {
+    text-decoration: none;
+    padding: 20px;
+    color: #202020;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.decolink {
+    margin-left: 110px;
+    border-radius: 10px;
+    border-color: #202020;
+    border: solid;
+    background-color: #ab919e;
+    width: 150px;
+    align-items: center;
+}
+
+/*footer*/
+
+footer {
+    background-color: #202020;
+    color: #ab919e;
+    font-weight: 500;
+    max-width: 100%;
+}
+
+.logoredes ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.logoredes ul img {
+  align-items: flex-end;
+}
+
+#cositasfooter {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#cositasfooter h4 {
+    font-weight: bold;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: #ab919e;
+}
+
+.enlaces ul {
+    list-style: none;
+}
+
+.datos ul {
+    list-style: none;
+    color: #ab919e;
+}
+
+.datos a {
+    text-decoration: none;
+    color: #ab919e;
+}
+
+.mail {
+    color: #ab919e;
+    font-weight: bold;
+}
+
+.mail form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.locales ul {
+    list-style: none;
+    color: #ab919e;
+
+}
+#email {
+    width: auto;
+}
+
+
+.copyyarriba {
+    text-align: center;
+    text-decoration: underline;
+    justify-content: space-around;
+    max-width: 100%;
+    color: #ab919e;
+}
+
+.copyyarriba a {
+    color: #ab919e;
+}
+
+/*CONTACTO*/
+
+.containerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.containerform {
+    margin: 5px;
+}
+
+.contacto div {
+    margin: 20px;
+}
+
+.botonEnviar input {
+    border: #202020;
+    border: solid;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.contacto h1 {
+
+    margin-top: 150px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+input {
+    border-color: #202020;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 25%;
+}
+
+select {
+    border-color: #202020;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 25%;
+}
+
+textarea {
+    border-color: #202020;
+    width: 25%;
+}
+
+/*OTRASPAGS*/
+.extras {
+    margin: 200px;
+}
+
+/*TABLET hasta 768*/
+@media (max-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    #navbar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+    } 
+
+    .TextoDisplay {
+        display: none;
+    }
+
+    .search-bar {
+       display: none;
+    
+    }
+    .search-bar button {
+        display: none;
+    }
+
+    .headerContent {
+        margin-top: auto;
+    }
+    .borrarTexto {
+        Display:none;
+    }    
+    main a {
+       width: fit-content;
+    }
+
+     main .portada {
+        margin-top: 196px;
+    }
+    
+    .logoBusqueda {
+        display: flex;
+    }
+
+    .comprasCuenta .loguitos {
+        display: flex; 
+    }
+
+
+    .intro {
+        height: 100px;
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #productosection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+    #locales {
+        display:flex;
+        flex-direction: column;
+        margin: 20px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+}
+
+    .divlocales h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .divlocales p {
+        text-align: center;
+    }
+    
+
+    #locales img {
+        border-radius: 10px;
+        width: 600px;
+        height: 300px;
+    }
+
+    #nuevaColeccion {
+        justify-content: center;
+        max-width: 100%; 
+    }
+    .divNuevaColeccion h1 {
+        margin-left: 20px;
+        margin-right: auto;
+   
+    }
+
+    .divNuevaColeccion p {
+        margin-left: auto;
+        width: 300px;
+        margin-right: auto;
+        height: 140px;
+    }
+
+    #nuevaColeccion img {
+        width: 400px;
+        height: 400px;
+        margin-left: auto;
+        
+    }
+
+    .decolink {
+        margin-left: 103px;
+        margin-top: 58px;
+    }
+
+    #cositasfooter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #cositasfooter div {
+        padding-bottom: 20px;
+    }
+
+    #cositasfooter h4 {
+        text-align: center;
+    }
+    #cositasfooter ul li {
+        text-align: center;
+    }
+}
+
+/*MOBILE hasta 425*/
+@media (max-width: 425px) {
+    
+}
