@@ -22,7 +22,6 @@ body {
 header {
     font-family: 'Courier Prime', monospace;
     background-color: #202020;
-    position: fixed;
     width: 100%;
     left: 0;
     display: grid;
@@ -262,12 +261,16 @@ footer {
     max-width: 100%;
 }
 
+.logoredes {
+    padding-top: 10px;
+}
+
 .logoredes ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0;
 }
 
 .logoredes ul img {
@@ -310,16 +313,28 @@ footer {
     color: #ab919e;
 }
 
-.mail {
-    color: #ab919e;
-    font-weight: bold;
-}
-
 .mail form {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    padding-top: 10px;
+    margin: 10px;
+    flex-direction: column;
+}
+
+form div {
+    margin: 10px 0 10px 0;
+        width: 80%;
+}
+
+#email {
+    width: 100%;
+    border-radius: 5px;
+    background: #ab919e;
+}
+
+#email::placeholder {
+    color: black;
+    text-align: center;
 }
 
 .locales ul {
