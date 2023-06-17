@@ -21,6 +21,9 @@ body {
 
 
 /*nav*/
+#navHamburguesa {
+    display: none;
+}
 
 nav a {
     font-family: 'Courier Prime', monospace;
@@ -378,8 +381,12 @@ textarea {
     margin: 200px;
 }
 
-/*TABLET hasta 768*/
-@media (max-width: 768px) {
+
+@media (max-width: 425px) {
+
+    #navHamburguesa {
+        display:flex;
+    }
 
     header {
         display: flex;
@@ -520,9 +527,4 @@ textarea {
     #cositasfooter ul li {
         text-align: center;
     }
-}
-
-/*MOBILE hasta 425*/
-@media (max-width: 425px) {
-    
 }
