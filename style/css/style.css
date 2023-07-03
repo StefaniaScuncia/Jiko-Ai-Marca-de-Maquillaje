@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Courier Prime", monospace;
-  background-color: #fffef3;
   list-style: none;
+}
+
+body {
+  font-family: "Courier Prime", monospace;
+  background-color: #fffef3;
 }
 
 header {
@@ -44,6 +48,260 @@ header .comprasCuenta ul li {
 }
 header .lupaMobile {
   display: none;
+}
+
+nav {
+  background-color: #202020;
+}
+nav a {
+  font-family: "Courier Prime", monospace;
+  color: #ab919e;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+nav ul {
+  font-family: "Courier Prime", monospace;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#navBurger {
+  display: none;
+}
+
+.busqueda {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.busqueda .search-bar {
+  width: 80%;
+  height: 50px;
+  align-items: center;
+  background: rgb(253, 253, 253);
+  border-radius: 60px;
+  display: flex;
+  border: 1px solid black;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+.busqueda .search-bar input {
+  border: 0;
+  flex: 1;
+  outline: none;
+  padding-left: 10px;
+  font-size: 20px;
+  color: rgb(3, 0, 2);
+  width: 100%;
+  max-width: 700px;
+  align-items: center;
+  background: transparent;
+  border: 1;
+  align-content: center;
+}
+.busqueda .search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #ab919e;
+  cursor: pointer;
+  padding: 5px;
+}
+
+main a {
+  width: 100%;
+}
+main h1 {
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 25px;
+}
+main #productosection {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+main #productosection .intro {
+  height: 300px;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 25px;
+}
+main #productosection .intro span {
+  font-weight: bold;
+}
+main #productosection .productodiv {
+  background-color: white;
+  color: black;
+  width: 250px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+main #locales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+}
+main #locales .divlocales {
+  flex-direction: row;
+}
+main #locales .divlocales p {
+  font-size: 20px;
+  text-align: left;
+  margin: 20px;
+}
+main #locales .divlocales h1 {
+  text-align: left;
+}
+main #localesimg {
+  border-radius: 0 10px 10px 0;
+  width: 800px;
+  height: 400px;
+}
+main #nuevaColeccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 100%;
+  background-color: #f3eef1;
+}
+main #nuevaColeccion img {
+  width: 500px;
+  height: 500px;
+  background-color: #f3eef1;
+  margin-left: 170px;
+}
+main #nuevaColeccion .divNuevaColeccion {
+  flex-direction: row;
+}
+main #nuevaColeccion .divNuevaColeccion h1 {
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+main #nuevaColeccion .divNuevaColeccion p {
+  text-align: left;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+main #nuevaColeccion .divNuevaColeccion .decolink {
+  margin-left: 110px;
+  border-radius: 10px;
+  border-color: #202020;
+  border: solid;
+  background-color: #ab919e;
+  width: 150px;
+  align-items: center;
+}
+main #nuevaColeccion .divNuevaColeccion .decolink a {
+  text-decoration: none;
+  padding: 20px;
+  color: #202020;
+  text-align: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #202020;
+  color: #ab919e;
+  font-weight: 500;
+  max-width: 100%;
+}
+footer .logoredes {
+  padding-top: 10px;
+}
+footer .logoredes ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+}
+footer .logoredes ul img {
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  margin: 5px;
+}
+footer #cositasfooter {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+}
+footer #cositasfooter h4 {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+footer #cositasfooter .enlaces a {
+  text-decoration: none;
+  color: #ab919e;
+}
+footer #cositasfooter .enlaces ul {
+  list-style: none;
+  padding: 0%;
+}
+footer #cositasfooter .datos ul {
+  list-style: none;
+  color: #ab919e;
+}
+footer #cositasfooter .datos a {
+  text-decoration: none;
+  color: #ab919e;
+}
+footer #cositasfooter .mail form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  flex-direction: column;
+}
+footer #cositasfooter .mail form div {
+  margin: 10px 0 10px 0;
+  width: 80%;
+}
+footer #cositasfooter .mail #email {
+  width: auto;
+  border-radius: 5px;
+  background: #ab919e;
+}
+footer #cositasfooter .mail #email::placeholder {
+  color: black;
+  text-align: center;
+}
+footer #cositasfooter .locales ul {
+  list-style: none;
+  color: #ab919e;
+}
+footer .copyyarriba {
+  text-align: center;
+  text-decoration: underline;
+  justify-content: space-around;
+  max-width: 100%;
+  color: #ab919e;
+}
+footer .copyyarriba a {
+  color: #ab919e;
 }
 
 /*# sourceMappingURL=style.css.map */

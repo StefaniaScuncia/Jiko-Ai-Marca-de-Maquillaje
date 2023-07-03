@@ -1,0 +1,110 @@
+footer {
+    background-color: #202020;
+    color: #ab919e;
+    font-weight: 500;
+    max-width: 100%;
+
+    .logoredes {
+        padding-top: 10px;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0;
+
+            img {
+                width: 50px;
+                height: 50px;
+                align-items: center;
+                margin: 5px;
+              }
+
+        }
+
+    }
+
+    #cositasfooter {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        text-align: center;
+    
+    
+        & h4 {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .enlaces {
+            a {
+                text-decoration: none;
+                color: #ab919e;
+            }
+
+            & ul {
+                list-style: none;
+                padding: 0%;
+            }
+        }
+
+        .datos {
+            ul {
+            list-style: none;
+            color: #ab919e;
+            }
+
+            & a {
+                text-decoration: none;
+                color: #ab919e;
+            }           
+        }
+
+        .mail {
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+                flex-direction: column;
+                
+                div {
+                    margin: 10px 0 10px 0;
+                    width: 80%;
+                }   
+            }
+
+            #email {
+                width: auto;
+                border-radius: 5px;
+                background: #ab919e;
+            }
+            
+            #email::placeholder {
+                color: black;
+                text-align: center;
+            }    
+        }
+
+        .locales ul {
+            list-style: none;
+            color: #ab919e;
+        
+        }
+    }
+
+    .copyyarriba {
+        text-align: center;
+        text-decoration: underline;
+        justify-content: space-around;
+        max-width: 100%;
+        color: #ab919e;
+
+        & a {
+        color: #ab919e;
+        }
+
+    }
+}
