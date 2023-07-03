@@ -1,0 +1,48 @@
+header {
+    font-family: 'Courier Prime', monospace;
+    background-color: #202020;
+    width: 100%;
+    left: 0;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    grid-template-columns: 20% 60% 20%;
+    padding: 10px;
+    top: 0%;
+
+    .logo {
+        margin-left: 50px;
+
+        & img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .headerContent {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comprasCuenta {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        ul {
+
+            li {
+                text-decoration: none;
+                color: #ab919e;
+                list-style: none;
+                padding: 1px;
+            }
+        }
+    }
+    .lupaMobile {
+            display: none;
+        }
+
+
+}
