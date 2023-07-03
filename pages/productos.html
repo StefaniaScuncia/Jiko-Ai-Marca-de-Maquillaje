@@ -5,48 +5,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
-    <link rel="stylesheet" href="../css/style.css"></a>
-    <link rel="shortcut icon" href="../images/J (1)-PhotoRoom.png-PhotoRoom.png" type="image/x-icon">
+    <title>FAQS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Indie+Flower&display=swap"
         rel="stylesheet">
-
+    <link rel="shortcut icon" href="../images/J (1)-PhotoRoom.png-PhotoRoom.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
+
+        <section id="navBurger">
+            <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+                <div class="bg-dark p-4">
+                    <h5 class="text-body-emphasis h4">Menu</h5>
+                    <ul>
+                        <li><a href="../index.html">Pagina principal</a></li>
+                        <li><a href="../pages/productos.html">Productos</a></li>
+                        <li><a href="../pages/nosotros.html">Quiénes somos</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+        </section>
+
         <div class="logo">
-            <a href="../index.html"><img src="../images/J (1)-PhotoRoom.png-PhotoRoom.png" alt="Logo de JikoAi" width="74"></a>
+            <a href="#"><img src="../images/J (1)-PhotoRoom.png-PhotoRoom.png" alt="Logo de JikoAi" width="74"></a>
         </div>
 
         <div class="headerContent">
             <div class="busqueda">
                 <form action="" method="get" class="search-bar">
-                    <input type="text" placeholder="Buscar">
+                    <input type="text" placeholder="Buscar" class="borrarTexto">
                     <button type="submit"><img src="../images/lupita.png" alt="logo" width="25px"></button>
                 </form>
             </div>
 
-            <nav id="navbar">
+            <nav id="navbarDesktop">
                 <ul>
                     <li><a href="../index.html">Pagina principal</a></li>
-                    <li><a href="#">Productos</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
                     <li><a href="../pages/nosotros.html">Quiénes somos</a></li>
-                    <li><a href="./faq.html">FAQ</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="../pages/faq.html">FAQ</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
 
-
+        <div class="comprasCuenta">
+            <ul class="loguitos">
+                <li><img src="../images/logomicuenta.png" alt="logoMiCuenta" width="30px" height="30px"></li>
+                <li><img src="../images/miscompras.png" alt="logoMisCompras" width="30px" height="30px"></li>
+                <li><img src="../images/lupamobile.png" alt="logoLupaMobile" class="lupaMobile" width="30px"
+                        height="30px"></li>
+            </ul>
+            <ul class="TextoDisplay">
+                <li>Mi cuenta</li>
+                <li>Mis compras</li>
+            </ul>
+        </div>
     </header>
 
-
     <main class="extras">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore iste, optio quas eum harum dignissimos
-            rerum ea ipsum quos numquam, totam incidunt voluptas accusantium in quam iusto nulla! Ex, dicta?</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis eaque ratione delectus
+        officiis temporibus praesentium quis harum magnam beatae perspiciatis est, in tenetur iste distinctio. Ea qui
+        eaque doloremque?
     </main>
 
     <footer>
@@ -66,24 +103,24 @@
             <div class="enlaces">
                 <h4>Enlaces</h4>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/faq.html">FAQS</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="../pages/faq.html">FAQS</a></li>
                 </ul>
             </div>
 
             <div class="datos">
+                <h4>Términos y condiciones</h4>
                 <ul>
-                    <li>Terminos y condiciones</li>
                     <li> Numero de telefono: <a href="">4444-5555</a></li>
                     <li>Mail: <a href=""> hikoai@info.com</a> </li>
                 </ul>
             </div>
 
             <div class="mail">
-                <p>Suscribite para recibir novedades de la marca</p>
+                <h4>Suscribite para recibir novedades de la marca</h4>
                 <form>
                     <div>
                         <input type="email" id="email" placeholder="Ingresa tu email">
@@ -99,8 +136,6 @@
                     <li>Local 3</li>
                     <li>Local 4</li>
                 </ul>
-
-                INSERTAR MAPA
             </div>
         </section>
 
@@ -111,6 +146,11 @@
             </div>
         </section>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>

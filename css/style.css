@@ -412,9 +412,17 @@ textarea {
     width: 25%;
 }
 
-/*OTRASPAGS*/
-.extras {
-    margin: 200px;
+/*FAQS*/
+.FAQS li {
+    list-style:none; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.FAQS h1 {
+    text-align: left;
+    padding-left: 2rem;
+    font-weight: bolder;
 }
 
 /*MOBILE hasta 425 px*/
