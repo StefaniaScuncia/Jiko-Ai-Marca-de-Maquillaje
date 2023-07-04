@@ -1,0 +1,50 @@
+.containerform {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 5px;
+}
+
+.contacto {
+    div {
+    margin: 20px;
+    }
+
+    h1 {
+
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+    }    
+}
+
+
+.botonEnviar input {
+    border: #202020;
+    border: solid;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+input {
+    border-color: #202020;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 25%;
+}
+
+select {
+    border-color: #202020;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    width: 25%;
+}
+
+textarea {
+    border-color: #202020;
+    width: 25%;
+}

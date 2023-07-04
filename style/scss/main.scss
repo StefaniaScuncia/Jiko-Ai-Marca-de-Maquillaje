@@ -10,7 +10,16 @@
 //Estilos searchbar 
 @import "./components/searchbar";
 
-//Estilos pagPrincipal
+//Estilos pagina Principal
 @import "./pages/paginaprincipal";
 
-@import "./layout/footer"
+//Estilos footer
+@import "./layout/footer";
+
+//EstilosContactos
+@import "./pages/contacto";
+
+//Estilos mobile
+@import "./_versionmobile/versionmobile";
+
+

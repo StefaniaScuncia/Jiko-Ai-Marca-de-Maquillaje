@@ -1,14 +1,11 @@
 main {
-    a {
-        width: 100%;
-    
-    }
 
     h1 {
         text-align: center;
         padding: 10px;
         margin-top: 20px;
         font-size: 25px;
+        font-weight: bold;
     }
 
     #productosection {
@@ -53,9 +50,9 @@ main {
             flex-direction: row;
 
             & p {
-                font-size: 20px;
                 text-align: left;
                 margin: 20px;
+                width: fit-content;
             } 
 
             & h1 {
@@ -63,10 +60,10 @@ main {
             }
         }
 
-        &img {
+        & img {
             border-radius: 0 10px 10px 0;;
-            width: 800px;
-            height: 400px;
+            width: 600px;
+            height: 400px; 
         }
     }
 
