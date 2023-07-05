@@ -1,5 +1,7 @@
 @media (max-width: 425px) {
 
+    //NAVBURGER
+
     #navBurger {
         display: flex;
 
@@ -28,13 +30,7 @@
         }
     }
 
-    //NO SE SI LO PUSE BIEN JEJE
-    .container-fluid {
-        --bs-bg-opacity: 1;
-        background-color: #202020;
-    }
-
-
+    //HEADER
     header {
         display: flex;
         align-items: center;
@@ -78,6 +74,7 @@
         }
     }
 
+    //INDEX
     main {
         a {
             width: fit-content;
@@ -163,7 +160,7 @@
         }
     }
 
-
+    //FOOTER
     footer {
         #cositasfooter {
             display: flex;
@@ -192,6 +189,7 @@
         }
     }
 
+    //CONTACTO
     input {
         width: 100%;
     }
@@ -203,4 +201,7 @@
     select {
         width: 100%;
     }
+
+    //FAQS
+    
 }
