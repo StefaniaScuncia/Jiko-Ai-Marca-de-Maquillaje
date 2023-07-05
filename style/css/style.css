@@ -510,5 +510,27 @@ textarea {
     width: 100%;
   }
 }
+main h2 {
+  margin: 10px;
+}
+main #productosPage {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+}
+main #productosPage .productodiv {
+  background-color: white;
+  color: black;
+  width: 250px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+main #productosPage .productodiv h3 {
+  font-size: small;
+}
 
 /*# sourceMappingURL=style.css.map */

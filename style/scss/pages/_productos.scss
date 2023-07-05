@@ -1,0 +1,26 @@
+main {
+    h2 {
+        margin: 10px;
+    }
+    #productosPage {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); // Crea 6 columnas con el mismo ancho
+        grid-template-rows: repeat(5, 1fr); // Crea 3 filas con la misma altura
+        gap: 10px;
+
+        .productodiv {
+            background-color: white;
+            color: black;
+            width: 250px;
+            padding: 30px;
+            margin: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            
+            h3 {
+            font-size: small;
+            }
+        }
+    }
+}
