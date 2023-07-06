@@ -1,12 +1,13 @@
-nav  {
+nav {
 
     background-color: #202020;
+
     a {
-    font-family: 'Courier Prime', monospace;
-    color: #ab919e;
-    text-decoration: none;
-    padding: 5px;
-    margin-top: 10px;
+        font-family: 'Courier Prime', monospace;
+        color: #ab919e;
+        text-decoration: none;
+        padding: 5px;
+        margin-top: 10px;
     }
 
     ul {
@@ -16,6 +17,7 @@ nav  {
         justify-content: center;
     }
 }
+
 
 #navBurger {
     display: none;

@@ -283,6 +283,15 @@ footer #cositasfooter .mail form div {
   margin: 10px 0 10px 0;
   width: 80%;
 }
+footer #cositasfooter .mail form button {
+  border-radius: 3px;
+  border: #202020;
+  background-color: #f3eef1;
+  border: solid;
+  margin-bottom: 10px;
+  border-width: thin;
+  margin: 10px;
+}
 footer #cositasfooter .mail #email {
   width: auto;
   border-radius: 5px;
@@ -307,11 +316,18 @@ footer .copyyarriba a {
   color: #ab919e;
 }
 
-.containerform {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  margin: 5px;
+.form-check {
+  margin-left: 10px;
+}
+
+button {
+  border-radius: 3px;
+  border: #202020;
+  background-color: #f3eef1;
+  border: solid;
+  margin-bottom: 10px;
+  border-width: thin;
+  margin: 10px;
 }
 
 .contacto div {
@@ -323,21 +339,12 @@ footer .copyyarriba a {
   text-align: left;
 }
 
-.botonEnviar input {
-  border: #202020;
-  border: solid;
-  margin-bottom: 10px;
-  width: 80px;
-  height: 30px;
-  border-radius: 20px;
-}
-
 input {
   border-color: #202020;
   border-right: none;
   border-left: none;
   border-top: none;
-  width: 25%;
+  width: 50%;
 }
 
 select {
@@ -345,12 +352,12 @@ select {
   border-right: none;
   border-left: none;
   border-top: none;
-  width: 25%;
+  width: 50%;
 }
 
 textarea {
   border-color: #202020;
-  width: 25%;
+  width: 50%;
 }
 
 .FAQS li {
@@ -515,6 +522,11 @@ textarea {
   }
   select {
     width: 100%;
+  }
+  #productosPage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
 main h2 {

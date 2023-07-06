@@ -1,8 +1,15 @@
-.containerform {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    margin: 5px;
+.form-check {
+    margin-left: 10px;
+}
+
+button {
+    border-radius: 3px;
+    border: #202020;
+    background-color: #f3eef1;
+    border: solid;
+    margin-bottom: 10px;
+    border-width: thin;
+    margin: 10px;
 }
 
 .contacto {
@@ -18,22 +25,12 @@
     }    
 }
 
-
-.botonEnviar input {
-    border: #202020;
-    border: solid;
-    margin-bottom: 10px;
-    width: 80px;
-    height: 30px;
-    border-radius: 20px;
-}
-
 input {
     border-color: #202020;
     border-right: none;
     border-left: none;
     border-top: none;
-    width: 25%;
+    width: 50%;
 }
 
 select {
@@ -41,10 +38,10 @@ select {
     border-right: none;
     border-left: none;
     border-top: none;
-    width: 25%;
+    width: 50%;
 }
 
 textarea {
     border-color: #202020;
-    width: 25%;
+    width: 50%;
 }

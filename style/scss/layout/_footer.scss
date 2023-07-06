@@ -73,6 +73,16 @@ footer {
                     margin: 10px 0 10px 0;
                     width: 80%;
                 }   
+
+                button {
+                    border-radius: 3px;
+                    border: #202020;
+                    background-color: #f3eef1;
+                    border: solid;
+                    margin-bottom: 10px;
+                    border-width: thin;
+                    margin: 10px;
+                }
             }
 
             #email {
@@ -84,7 +94,7 @@ footer {
             #email::placeholder {
                 color: black;
                 text-align: center;
-            }    
+            }
         }
 
         .locales ul {

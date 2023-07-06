@@ -2,10 +2,11 @@ main {
     h2 {
         margin: 10px;
     }
+    
     #productosPage {
         display: grid;
-        grid-template-columns: repeat(4, 1fr); // Crea 6 columnas con el mismo ancho
-        grid-template-rows: repeat(5, 1fr); // Crea 3 filas con la misma altura
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr); 
         gap: 10px;
 
         .productodiv {
