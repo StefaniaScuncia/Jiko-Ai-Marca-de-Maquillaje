@@ -150,6 +150,13 @@ main #productosection .productodiv {
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+main #productosection .productodiv .hover-animation {
+  animation-play-state: paused;
+}
+main #productosection .productodiv .hover-animation:hover {
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
 main #locales {
   display: flex;
   flex-direction: row;
@@ -531,6 +538,13 @@ main #productosPage .productodiv {
 }
 main #productosPage .productodiv h3 {
   font-size: small;
+}
+main #productosPage .productodiv .hover-animation {
+  animation-play-state: paused;
+}
+main #productosPage .productodiv .hover-animation:hover {
+  animation-play-state: running;
+  animation-iteration-count: infinite;
 }
 
 /*# sourceMappingURL=style.css.map */

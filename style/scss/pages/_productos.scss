@@ -21,6 +21,16 @@ main {
             h3 {
             font-size: small;
             }
+            
+            .hover-animation {
+                animation-play-state: paused;
+            }
+            
+            .hover-animation:hover {
+                animation-play-state: running;
+                animation-iteration-count:infinite; 
+            
+            }
         }
     }
 }
