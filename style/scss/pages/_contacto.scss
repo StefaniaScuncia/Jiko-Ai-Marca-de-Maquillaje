@@ -34,11 +34,7 @@ input {
 }
 
 select {
-    border-color: #202020;
-    border-right: none;
-    border-left: none;
-    border-top: none;
-    width: 50%;
+   @extend input;
 }
 
 textarea {

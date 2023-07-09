@@ -1,32 +1,32 @@
-//Estilos  globales
+/*Estilos  globales*/
 @import "./base/reset";
 
-//Estilos header
+/*Estilos header*/
 @import "./layout/header";
 
-//Estilos navbar
+/*Estilos navbar*/
 @import "./layout/navbar";
 
-//Estilos searchbar 
+/*Estilos searchbar*/ 
 @import "./components/searchbar";
 
-//Estilos pagina Principal
+/*Estilos pagina Principal*/
 @import "./pages/paginaprincipal";
 
-//Estilos footer
+/*Estilos footer*/
 @import "./layout/footer";
 
-//EstilosContactos
+/*EstilosContactos*/
 @import "./pages/contacto";
 
-//EstilosFAQS 
+/*EstilosFAQS*/
 @import "./pages/faq";
 
 
-//Estilos mobile
+/*Estilos mobile*/
 @import "./_versionmobile/versionmobile";
 
-//Estilos productos
+/*Estilos productos*/
 @import "./pages/productos"; 
 
 

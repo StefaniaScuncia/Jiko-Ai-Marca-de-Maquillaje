@@ -1,3 +1,4 @@
+/*Estilos  globales*/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@ body {
   background-color: #fffef3;
 }
 
+/*Estilos header*/
 header {
   font-family: "Courier Prime", monospace;
   background-color: #202020;
@@ -50,6 +52,7 @@ header .lupaMobile {
   display: none;
 }
 
+/*Estilos navbar*/
 nav {
   background-color: #202020;
 }
@@ -71,6 +74,7 @@ nav ul {
   display: none;
 }
 
+/*Estilos searchbar*/
 .busqueda {
   background-size: cover;
   background-position: center;
@@ -91,7 +95,7 @@ nav ul {
   margin-left: 20px;
   justify-content: space-between;
 }
-.busqueda .search-bar input {
+.busqueda .search-bar input, .busqueda .search-bar select {
   border: 0;
   flex: 1;
   outline: none;
@@ -105,7 +109,7 @@ nav ul {
   border: 1;
   align-content: center;
 }
-.busqueda .search-bar button {
+.busqueda .search-bar button, .busqueda .search-bar footer #cositasfooter .mail form button, footer #cositasfooter .mail form .busqueda .search-bar button {
   border: 0;
   border-radius: 50%;
   width: 50px;
@@ -113,8 +117,10 @@ nav ul {
   background: #ab919e;
   cursor: pointer;
   padding: 5px;
+  margin: auto;
 }
 
+/*Estilos pagina Principal*/
 main h1 {
   text-align: center;
   padding: 10px;
@@ -157,33 +163,29 @@ main #productosection .productodiv .hover-animation:hover {
   animation-play-state: running;
   animation-iteration-count: infinite;
 }
-main #locales {
+main #locales, main #nuevaColeccion {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   max-width: 100%;
 }
-main #locales .divlocales {
+main #locales .divlocales, main #nuevaColeccion .divlocales {
   flex-direction: row;
 }
-main #locales .divlocales p {
+main #locales .divlocales p, main #nuevaColeccion .divlocales p {
   text-align: left;
   margin: 20px;
   width: fit-content;
 }
-main #locales .divlocales h1 {
+main #locales .divlocales h1, main #nuevaColeccion .divlocales h1 {
   text-align: left;
 }
-main #locales img {
+main #locales img, main #nuevaColeccion img {
   border-radius: 0 10px 10px 0;
   width: 600px;
   height: 400px;
 }
 main #nuevaColeccion {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 100%;
   background-color: #f3eef1;
 }
 main #nuevaColeccion img {
@@ -224,6 +226,7 @@ main #nuevaColeccion .divNuevaColeccion .decolink a {
   font-size: 20px;
 }
 
+/*Estilos footer*/
 footer {
   background-color: #202020;
   color: #ab919e;
@@ -256,21 +259,13 @@ footer #cositasfooter h6 {
   font-weight: bold;
   text-align: center;
 }
-footer #cositasfooter .enlaces a {
+footer #cositasfooter .enlaces a, footer #cositasfooter .locales a, footer #cositasfooter .datos a {
   text-decoration: none;
   color: #ab919e;
 }
-footer #cositasfooter .enlaces ul {
+footer #cositasfooter .enlaces ul, footer #cositasfooter .locales ul, footer #cositasfooter .datos ul {
   list-style: none;
   padding: 0%;
-}
-footer #cositasfooter .datos ul {
-  list-style: none;
-  color: #ab919e;
-}
-footer #cositasfooter .datos a {
-  text-decoration: none;
-  color: #ab919e;
 }
 footer #cositasfooter .mail form {
   display: flex;
@@ -283,15 +278,6 @@ footer #cositasfooter .mail form div {
   margin: 10px 0 10px 0;
   width: 80%;
 }
-footer #cositasfooter .mail form button {
-  border-radius: 3px;
-  border: #202020;
-  background-color: #f3eef1;
-  border: solid;
-  margin-bottom: 10px;
-  border-width: thin;
-  margin: 10px;
-}
 footer #cositasfooter .mail #email {
   width: auto;
   border-radius: 5px;
@@ -300,10 +286,6 @@ footer #cositasfooter .mail #email {
 footer #cositasfooter .mail #email::placeholder {
   color: black;
   text-align: center;
-}
-footer #cositasfooter .locales ul {
-  list-style: none;
-  color: #ab919e;
 }
 footer .copyyarriba {
   text-align: center;
@@ -316,11 +298,12 @@ footer .copyyarriba a {
   color: #ab919e;
 }
 
+/*EstilosContactos*/
 .form-check {
   margin-left: 10px;
 }
 
-button {
+button, footer #cositasfooter .mail form button {
   border-radius: 3px;
   border: #202020;
   background-color: #f3eef1;
@@ -339,15 +322,7 @@ button {
   text-align: left;
 }
 
-input {
-  border-color: #202020;
-  border-right: none;
-  border-left: none;
-  border-top: none;
-  width: 50%;
-}
-
-select {
+input, select {
   border-color: #202020;
   border-right: none;
   border-left: none;
@@ -360,6 +335,7 @@ textarea {
   width: 50%;
 }
 
+/*EstilosFAQS*/
 .FAQS li {
   list-style: none;
   width: 100%;
@@ -376,6 +352,7 @@ textarea {
   text-align: justify;
 }
 
+/*Estilos mobile*/
 @media (max-width: 425px) {
   #navBurger {
     display: flex;
@@ -411,7 +388,7 @@ textarea {
   header .headerContent .search-bar {
     display: none;
   }
-  header .headerContent .search-bar button {
+  header .headerContent .search-bar button, header .headerContent .search-bar footer #cositasfooter .mail form button, footer #cositasfooter .mail form header .headerContent .search-bar button {
     display: none;
   }
   header .headerContent .borrarTexto {
@@ -450,7 +427,7 @@ textarea {
     align-items: center;
     justify-content: center;
   }
-  main #locales {
+  main #locales, main #nuevaColeccion {
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -458,16 +435,16 @@ textarea {
     text-align: center;
     justify-content: center;
   }
-  main #locales img {
+  main #locales img, main #nuevaColeccion img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
   }
-  main #locales .divlocales h1 {
+  main #locales .divlocales h1, main #nuevaColeccion .divlocales h1 {
     font-size: 30px;
     text-align: center;
   }
-  main #locales .divlocales p {
+  main #locales .divlocales p, main #nuevaColeccion .divlocales p {
     text-align: center;
   }
   main #nuevaColeccion {
@@ -514,7 +491,7 @@ textarea {
     width: 100%;
     text-align: center;
   }
-  input {
+  input, select {
     width: 100%;
   }
   textarea {
@@ -529,6 +506,7 @@ textarea {
     gap: 10px;
   }
 }
+/*Estilos productos*/
 main h2 {
   margin: 10px;
 }

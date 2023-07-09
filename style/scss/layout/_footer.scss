@@ -50,15 +50,7 @@ footer {
         }
 
         .datos {
-            ul {
-            list-style: none;
-            color: #ab919e;
-            }
-
-            & a {
-                text-decoration: none;
-                color: #ab919e;
-            }           
+           @extend .enlaces;          
         }
 
         .mail {
@@ -75,13 +67,7 @@ footer {
                 }   
 
                 button {
-                    border-radius: 3px;
-                    border: #202020;
-                    background-color: #f3eef1;
-                    border: solid;
-                    margin-bottom: 10px;
-                    border-width: thin;
-                    margin: 10px;
+                   @extend button;
                 }
             }
 
@@ -97,9 +83,8 @@ footer {
             }
         }
 
-        .locales ul {
-            list-style: none;
-            color: #ab919e;
+        .locales {
+            @extend .enlaces;
         
         }
     }

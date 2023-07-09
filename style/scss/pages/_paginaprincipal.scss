@@ -78,10 +78,7 @@ main {
     }
 
     #nuevaColeccion {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        max-width: 100%;
+       @extend #locales;
         background-color: #f3eef1;
     
 
