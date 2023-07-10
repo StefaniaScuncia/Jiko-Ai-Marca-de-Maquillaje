@@ -1,0 +1,70 @@
+main {
+    #introNosotros {
+        background-color: #f3eef1;
+        display: flex;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .textoDiv {
+            width: 500px;
+            padding: 50px;
+            background-color: white;
+            margin: 60px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+            @include mobile {
+                width: auto;
+                margin: 0%;
+            }
+
+            h5 {
+                font-weight: bold;
+            }
+        }
+
+    }
+
+    #bienvenida {
+        margin-left: 300px;
+        margin-right: 300px;
+        text-align: justify;
+        margin-top: 100px; 
+        margin-bottom: 100px;
+
+        @include mobile {
+            margin: auto;
+            padding: 20px;
+        }
+    }
+
+    #palabrasFounder {
+        display: flex;
+        flex-direction: row-reverse;
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .palabrasTextual {
+            text-align: justify;
+            padding: 100px;
+            border-top-style: solid;
+            border-color: rgb(238, 236, 236);
+            border-width: 1px; 
+            
+            @include mobile {
+                padding: 20px;
+            }
+
+            @include mobile {
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

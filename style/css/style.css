@@ -1,3 +1,4 @@
+/*Mixins*/
 /*Estilos  globales*/
 * {
   margin: 0;
@@ -24,6 +25,13 @@ header {
   padding: 10px;
   top: 0%;
 }
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
 header .logo {
   margin-left: 50px;
 }
@@ -37,6 +45,32 @@ header .headerContent {
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 768px) {
+  header .headerContent {
+    display: none;
+    margin-top: auto;
+  }
+}
+@media (max-width: 768px) {
+  header .headerContent .search-bar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .headerContent button, header .headerContent footer #cositasfooter .mail form button, footer #cositasfooter .mail form header .headerContent button {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .headerContent .borrarTexto {
+    Display: none;
+  }
+}
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+}
 header .comprasCuenta {
   display: flex;
   flex-direction: row;
@@ -48,11 +82,24 @@ header .comprasCuenta ul li {
   list-style: none;
   padding: 1px;
 }
-header .lupaMobile {
+header .comprasCuenta .lupaMobile {
   display: none;
 }
-
-/*Estilos navbar*/
+@media (max-width: 768px) {
+  header .comprasCuenta .lupaMobile {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  header .comprasCuenta .TextoDisplay {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  header .comprasCuenta .loguitos {
+    display: flex;
+  }
+} /*Estilos navbar*/
 nav {
   background-color: #202020;
 }
@@ -72,6 +119,40 @@ nav ul {
 
 #navBurger {
   display: none;
+}
+@media (max-width: 768px) {
+  #navBurger {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  #navBurger .navbar-dark {
+    background-color: #202020 !important;
+  }
+}
+@media (max-width: 768px) {
+  #navBurger .bg-dark {
+    background-color: #202020 !important;
+  }
+}
+@media (max-width: 768px) {
+  #navBurger .container-fluid {
+    --bs-bg-opacity: 1;
+    background-color: #202020;
+  }
+}
+@media (max-width: 768px) {
+  #navBurger ul {
+    font-family: "Courier Prime", monospace;
+    list-style: none;
+    color: #ab919e;
+  }
+}
+@media (max-width: 768px) {
+  #navBurger a {
+    color: #ab919e;
+    text-decoration: none;
+  }
 }
 
 /*Estilos searchbar*/
@@ -121,6 +202,22 @@ nav ul {
 }
 
 /*Estilos pagina Principal*/
+@media (max-width: 768px) {
+  main a {
+    width: fit-content;
+  }
+}
+@media (max-width: 768px) {
+  main .intro {
+    height: 100px;
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    font-size: 25px;
+    text-align: center;
+  }
+}
 main h1 {
   text-align: center;
   padding: 10px;
@@ -136,6 +233,14 @@ main #productosection {
   max-width: 100%;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  main #productosection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 main #productosection .intro {
   height: 300px;
   width: 300px;
@@ -145,6 +250,14 @@ main #productosection .intro {
 }
 main #productosection .intro span {
   font-weight: bold;
+}
+@media (max-width: 768px) {
+  main #productosection .intro {
+    height: auto;
+    width: 300px;
+    text-align: center;
+    margin-left: 0%;
+  }
 }
 main #productosection .productodiv {
   background-color: white;
@@ -169,6 +282,23 @@ main #locales, main #nuevaColeccion {
   justify-content: space-around;
   max-width: 100%;
 }
+@media (max-width: 768px) {
+  main #locales, main #nuevaColeccion {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  main #locales img, main #nuevaColeccion img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+}
 main #locales .divlocales, main #nuevaColeccion .divlocales {
   flex-direction: row;
 }
@@ -177,8 +307,19 @@ main #locales .divlocales p, main #nuevaColeccion .divlocales p {
   margin: 20px;
   width: fit-content;
 }
+@media (max-width: 768px) {
+  main #locales .divlocales p, main #nuevaColeccion .divlocales p {
+    text-align: center;
+  }
+}
 main #locales .divlocales h1, main #nuevaColeccion .divlocales h1 {
   text-align: left;
+}
+@media (max-width: 768px) {
+  main #locales .divlocales h1, main #nuevaColeccion .divlocales h1 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 main #locales img, main #nuevaColeccion img {
   border-radius: 0 10px 10px 0;
@@ -188,11 +329,26 @@ main #locales img, main #nuevaColeccion img {
 main #nuevaColeccion {
   background-color: #f3eef1;
 }
+@media (max-width: 768px) {
+  main #nuevaColeccion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+}
 main #nuevaColeccion img {
   width: 500px;
   height: 500px;
   background-color: #f3eef1;
   margin-left: 170px;
+}
+@media (max-width: 768px) {
+  main #nuevaColeccion img {
+    width: 425px;
+    height: 425px;
+    margin-left: auto;
+  }
 }
 main #nuevaColeccion .divNuevaColeccion {
   flex-direction: row;
@@ -202,11 +358,24 @@ main #nuevaColeccion .divNuevaColeccion h1 {
   margin-left: 50px;
   margin-top: 100px;
 }
+@media (max-width: 768px) {
+  main #nuevaColeccion .divNuevaColeccion h1 {
+    text-align: center;
+    margin: auto;
+  }
+}
 main #nuevaColeccion .divNuevaColeccion p {
   text-align: left;
   width: 300px;
   margin-bottom: 20px;
   margin-left: 50px;
+}
+@media (max-width: 768px) {
+  main #nuevaColeccion .divNuevaColeccion p {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+  }
 }
 main #nuevaColeccion .divNuevaColeccion .decolink {
   margin-left: 110px;
@@ -216,6 +385,12 @@ main #nuevaColeccion .divNuevaColeccion .decolink {
   background-color: #ab919e;
   width: 150px;
   align-items: center;
+}
+@media (max-width: 768px) {
+  main #nuevaColeccion .divNuevaColeccion .decolink {
+    margin: auto;
+    margin-top: 10px;
+  }
 }
 main #nuevaColeccion .divNuevaColeccion .decolink a {
   text-decoration: none;
@@ -255,6 +430,19 @@ footer #cositasfooter {
   padding: 10px;
   text-align: center;
 }
+@media (max-width: 768px) {
+  footer #cositasfooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  footer #cositasfooter div {
+    padding-bottom: 20px;
+  }
+}
 footer #cositasfooter h6 {
   font-weight: bold;
   text-align: center;
@@ -266,6 +454,11 @@ footer #cositasfooter .enlaces a, footer #cositasfooter .locales a, footer #cosi
 footer #cositasfooter .enlaces ul, footer #cositasfooter .locales ul, footer #cositasfooter .datos ul {
   list-style: none;
   padding: 0%;
+}
+@media (max-width: 768px) {
+  footer #cositasfooter .enlaces ul li, footer #cositasfooter .locales ul li, footer #cositasfooter .datos ul li {
+    text-align: center;
+  }
 }
 footer #cositasfooter .mail form {
   display: flex;
@@ -282,6 +475,12 @@ footer #cositasfooter .mail #email {
   width: auto;
   border-radius: 5px;
   background: #ab919e;
+}
+@media (max-width: 768px) {
+  footer #cositasfooter .mail #email {
+    width: 100%;
+    text-align: center;
+  }
 }
 footer #cositasfooter .mail #email::placeholder {
   color: black;
@@ -321,6 +520,11 @@ button, footer #cositasfooter .mail form button {
   margin-bottom: 50px;
   text-align: left;
 }
+@media (max-width: 768px) {
+  .contacto h1 {
+    text-align: center;
+  }
+}
 
 input, select {
   border-color: #202020;
@@ -329,10 +533,28 @@ input, select {
   border-top: none;
   width: 50%;
 }
+@media (max-width: 768px) {
+  input, select {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  h3 {
+    text-align: center;
+  }
+}
 
 textarea {
   border-color: #202020;
   width: 50%;
+}
+@media (max-width: 768px) {
+  textarea {
+    width: 100%;
+    align-items: center;
+  }
 }
 
 /*EstilosFAQS*/
@@ -352,171 +574,31 @@ textarea {
   text-align: justify;
 }
 
-/*Estilos mobile*/
-@media (max-width: 425px) {
-  #navBurger {
-    display: flex;
-  }
-  #navBurger .navbar-dark {
-    background-color: #202020 !important;
-  }
-  #navBurger .bg-dark {
-    background-color: #202020 !important;
-  }
-  #navBurger .bg-dark .container-fluid {
-    --bs-bg-opacity: 1;
-    background-color: #202020;
-  }
-  #navBurger ul {
-    font-family: "Courier Prime", monospace;
-    list-style: none;
-    color: #ab919e;
-  }
-  #navBurger a {
-    color: #ab919e;
-    text-decoration: none;
-  }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  header .headerContent {
-    display: none;
-    margin-top: auto;
-  }
-  header .headerContent .search-bar {
-    display: none;
-  }
-  header .headerContent .search-bar button, header .headerContent .search-bar footer #cositasfooter .mail form button, footer #cositasfooter .mail form header .headerContent .search-bar button {
-    display: none;
-  }
-  header .headerContent .borrarTexto {
-    Display: none;
-  }
-  header nav {
-    display: none;
-  }
-  header .comprasCuenta .TextoDisplay {
-    display: none;
-  }
-  header .comprasCuenta .lupaMobile {
-    display: flex;
-  }
-  header .comprasCuenta .loguitos {
-    display: flex;
-  }
-  main a {
-    width: fit-content;
-  }
-  main .portada img {
-    margin-top: 100px;
-  }
-  main .intro {
-    height: 100px;
-    width: 300px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-    font-size: 25px;
-    text-align: center;
-  }
-  main #productosection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  main #locales, main #nuevaColeccion {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-  }
-  main #locales img, main #nuevaColeccion img {
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-  }
-  main #locales .divlocales h1, main #nuevaColeccion .divlocales h1 {
-    font-size: 30px;
-    text-align: center;
-  }
-  main #locales .divlocales p, main #nuevaColeccion .divlocales p {
-    text-align: center;
-  }
-  main #nuevaColeccion {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 100%;
-    background-color: #f3eef1;
-  }
-  main #nuevaColeccion .divNuevaColeccion h1 {
-    text-align: center;
-    margin: auto;
-  }
-  main #nuevaColeccion .divNuevaColeccion p {
-    margin: auto;
-    text-align: center;
-    font-size: 20px;
-  }
-  main #nuevaColeccion img {
-    width: 425px;
-    height: 425px;
-    margin-left: auto;
-  }
-  main #nuevaColeccion .decolink {
-    margin: auto;
-    margin-top: 10px;
-  }
-  footer #cositasfooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  footer #cositasfooter div {
-    padding-bottom: 20px;
-  }
-  footer #cositasfooter h4 {
-    text-align: center;
-  }
-  footer #cositasfooter ul li {
-    text-align: center;
-  }
-  footer #cositasfooter #email {
-    width: 100%;
-    text-align: center;
-  }
-  input, select {
-    width: 100%;
-  }
-  textarea {
-    width: 100%;
-  }
-  select {
-    width: 100%;
-  }
-  #productosPage {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 /*Estilos productos*/
 main h2 {
   margin: 10px;
 }
-main #productosPage {
+@media (max-width: 768px) {
+  main h2 {
+    text-align: center;
+  }
+}
+
+#productosPage {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 10px;
 }
-main #productosPage .productodiv {
+@media (max-width: 768px) {
+  #productosPage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+#productosPage .productodiv {
   background-color: white;
   color: black;
   width: 250px;
@@ -526,15 +608,82 @@ main #productosPage .productodiv {
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-main #productosPage .productodiv h3 {
+#productosPage .productodiv h3 {
   font-size: small;
 }
-main #productosPage .productodiv .hover-animation {
+#productosPage .productodiv .hover-animation {
   animation-play-state: paused;
 }
-main #productosPage .productodiv .hover-animation:hover {
+#productosPage .productodiv .hover-animation:hover {
   animation-play-state: running;
   animation-iteration-count: infinite;
+}
+
+main #introNosotros {
+  background-color: #f3eef1;
+  display: flex;
+}
+@media (max-width: 768px) {
+  main #introNosotros {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main #introNosotros .textoDiv {
+  width: 500px;
+  padding: 50px;
+  background-color: white;
+  margin: 60px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+@media (max-width: 768px) {
+  main #introNosotros .textoDiv {
+    width: auto;
+    margin: 0%;
+  }
+}
+main #introNosotros .textoDiv h5 {
+  font-weight: bold;
+}
+main #bienvenida {
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: justify;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+@media (max-width: 768px) {
+  main #bienvenida {
+    margin: auto;
+    padding: 20px;
+  }
+}
+main #palabrasFounder {
+  display: flex;
+  flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+  main #palabrasFounder {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main #palabrasFounder .palabrasTextual {
+  text-align: justify;
+  padding: 100px;
+  border-top-style: solid;
+  border-color: rgb(238, 236, 236);
+  border-width: 1px;
+}
+@media (max-width: 768px) {
+  main #palabrasFounder .palabrasTextual {
+    padding: 20px;
+  }
+}
+@media (max-width: 768px) {
+  main #palabrasFounder .palabrasTextual h5 {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

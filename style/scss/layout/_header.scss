@@ -9,6 +9,12 @@ header {
     padding: 10px;
     top: 0%;
 
+    @include mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .logo {
         margin-left: 50px;
 
@@ -23,6 +29,36 @@ header {
         width: 100%;
         flex-direction: column;
         align-items: center;
+
+        @include mobile {
+            display: none;
+            margin-top: auto;
+        }
+
+        @include mobile {
+            .search-bar {
+                display: none;
+            }
+        }
+
+        @include mobile {
+            button {
+                display: none;
+            }
+        }
+
+        @include mobile {
+            .borrarTexto {
+                Display: none;
+            }
+        }
+
+    }
+
+    @include mobile {
+        nav {
+            display: none;
+        }
     }
 
     .comprasCuenta {
@@ -39,10 +75,28 @@ header {
                 padding: 1px;
             }
         }
-    }
-    .lupaMobile {
+
+        .lupaMobile {
             display: none;
+
+            @include mobile {
+                display: flex;
+            }
         }
+
+        @include mobile {
+            .TextoDisplay {
+                display: none;
+            }
+        }
+
+        @include mobile {
+            .loguitos {
+                display: flex;
+            }
+        }
+    }
+
 
 
 }

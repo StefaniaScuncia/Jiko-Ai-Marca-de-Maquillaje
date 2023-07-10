@@ -1,3 +1,6 @@
+/*Mixins*/
+@import "./abstracts/mixins";
+
 /*Estilos  globales*/
 @import "./base/reset";
 
@@ -22,12 +25,7 @@
 /*EstilosFAQS*/
 @import "./pages/faq";
 
-
-/*Estilos mobile*/
-@import "./_versionmobile/versionmobile";
-
 /*Estilos productos*/
 @import "./pages/productos"; 
 
-
-
+@import "./pages/nosotros"; 
