@@ -573,7 +573,7 @@ main h2 {
 @media (max-width: 768px) {
   #productosPage {
     gap: 10px;
-    align-items: center;
+    justify-content: center;
   }
 }
 #productosPage .productodiv {
