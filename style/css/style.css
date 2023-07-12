@@ -17,7 +17,6 @@ body {
 header {
   font-family: "Courier Prime", monospace;
   background-color: #202020;
-  width: 100%;
   left: 0;
   display: grid;
   grid-template-rows: 70% 30%;
@@ -41,7 +40,6 @@ header .logo img {
 }
 header .headerContent {
   display: flex;
-  width: 100%;
   flex-direction: column;
   align-items: center;
 }
@@ -538,20 +536,24 @@ textarea {
 }
 
 /*EstilosFAQS*/
-.FAQS li {
-  list-style: none;
-  width: 100%;
-  text-align: justify;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+.FAQS ol {
+  max-width: 900px;
 }
-.FAQS h1 {
+.FAQS ol li {
+  list-style: none;
+  text-align: justify;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.FAQS ol h1 {
   text-align: left;
   padding-left: 2rem;
   font-weight: bold;
   width: fit-content;
   text-align: justify;
+}
+.FAQS ol h4 {
+  font-weight: bold;
 }
 
 /*Estilos productos*/
@@ -606,10 +608,11 @@ main #introNosotros {
   }
 }
 main #introNosotros .textoDiv {
-  width: 500px;
-  padding: 50px;
+  width: 90%;
+  max-width: 600px;
+  padding: 40px;
   background-color: white;
-  margin: 60px;
+  margin-top: 60px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 @media (max-width: 768px) {

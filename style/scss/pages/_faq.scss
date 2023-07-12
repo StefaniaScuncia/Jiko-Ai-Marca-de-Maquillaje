@@ -1,18 +1,24 @@
 .FAQS {
-    li {
-        list-style: none;
-        width: 100%;
-        text-align: justify;
-        margin-right: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+    ol {
+        max-width: 900px;
 
-    h1 {
-        text-align: left;
-        padding-left: 2rem;
-        font-weight: bold;
-        width: fit-content;
-        text-align: justify;
+        li {
+            list-style: none;
+            text-align: justify;
+            margin-right: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            text-align: left;
+            padding-left: 2rem;
+            font-weight: bold;
+            width: fit-content;
+            text-align: justify;
+        }
+
+        h4 {
+            font-weight: bold;
+        }
     }
 }
