@@ -1,12 +1,23 @@
 .FAQS {
     ol {
         max-width: 900px;
+        padding: 1rem;
 
         li {
             list-style: none;
             text-align: justify;
             margin-right: 30px;
             margin-bottom: 30px;
+
+            @include mobile {
+                text-align: center;
+                margin-right: 0%;
+            }
+
+            @include tablet {
+                text-align: center;
+                margin-right: 0%;
+            }
         }
 
         h1 {
@@ -15,10 +26,29 @@
             font-weight: bold;
             width: fit-content;
             text-align: justify;
+
+            @include mobile {
+                text-align: center;
+                padding-left: 0%;
+            }
+
+            @include tablet {
+                text-align: center;
+                padding-left: 0%;
+            }
         }
 
         h4 {
             font-weight: bold;
+
+            @include mobile {
+                text-align: center;
+            }
+
+
+            @include tablet {
+                text-align: center;
+            }
         }
     }
 }

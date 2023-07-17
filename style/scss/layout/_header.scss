@@ -14,6 +14,12 @@ header {
         justify-content: space-between;
     }
 
+    @include tablet {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .logo {
         margin-left: 50px;
 
@@ -33,7 +39,18 @@ header {
             margin-top: auto;
         }
 
+        @include tablet {
+            display: none;
+            margin-top: auto;
+        }
+
         @include mobile {
+            .search-bar {
+                display: none;
+            }
+        }
+
+        @include tablet {
             .search-bar {
                 display: none;
             }
@@ -45,7 +62,19 @@ header {
             }
         }
 
+        @include tablet {
+            button {
+                display: none;
+            }
+        }
+
         @include mobile {
+            .borrarTexto {
+                Display: none;
+            }
+        }
+
+        @include tablet {
             .borrarTexto {
                 Display: none;
             }
@@ -54,6 +83,12 @@ header {
     }
 
     @include mobile {
+        nav {
+            display: none;
+        }
+    }
+
+    @include tablet {
         nav {
             display: none;
         }
@@ -80,6 +115,10 @@ header {
             @include mobile {
                 display: flex;
             }
+
+            @include tablet {
+                display: flex;
+            }
         }
 
         @include mobile {
@@ -88,7 +127,19 @@ header {
             }
         }
 
+        @include tablet {
+            .TextoDisplay {
+                display: none;
+            }
+        }
+
         @include mobile {
+            .loguitos {
+                display: flex;
+            }
+        }
+
+        @include tablet {
             .loguitos {
                 display: flex;
             }

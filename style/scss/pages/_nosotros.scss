@@ -1,4 +1,14 @@
 main {
+
+    h5 {
+        font-weight: 600;
+        text-align: center;
+    }
+
+    h2 {
+        font-weight:600;
+        text-align: center;
+    }
     #introNosotros {
         background-color: #f3eef1;
         display: flex;
@@ -7,10 +17,14 @@ main {
             display: flex;
             flex-direction: column;
         }
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
         
         .textoDiv {
             width: 90%;
-            max-width: 600px;
             padding: 40px;
             background-color: white;
             margin-top: 60px;
@@ -21,9 +35,11 @@ main {
                 margin: 0%;
             }
 
-            h5 {
-                font-weight: bold;
+            @include tablet {
+                width: auto;
+                margin: 0%;
             }
+
         }
 
     }
@@ -38,6 +54,13 @@ main {
         @include mobile {
             margin: auto;
             padding: 20px;
+            text-align: center;
+        }
+
+        @include tablet {
+            margin: auto;
+            padding: 20px;
+            text-align: center;
         }
     }
 
@@ -46,6 +69,11 @@ main {
         flex-direction: row-reverse;
 
         @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include tablet {
             display: flex;
             flex-direction: column;
         }
@@ -59,13 +87,14 @@ main {
             
             @include mobile {
                 padding: 20px;
+                text-align: center;
             }
 
-            @include mobile {
-                h5 {
-                    text-align: center;
-                }
+            @include tablet {
+                padding: 20px;
+                text-align: center;
             }
+
         }
     }
 }

@@ -38,7 +38,20 @@ footer {
             align-items: center;
         }
 
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
         @include mobile {
+            & div {
+                padding-bottom: 20px;
+            }
+        }
+
+        @include tablet {
             & div {
                 padding-bottom: 20px;
             }
@@ -61,6 +74,12 @@ footer {
                 padding: 0%;
 
                 @include mobile {
+                    li {
+                        text-align: center;
+                    }
+                }
+
+                @include tablet {
                     li {
                         text-align: center;
                     }
@@ -96,6 +115,11 @@ footer {
                 background: #ab919e;
 
                 @include mobile {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                @include tablet {
                     width: 100%;
                     text-align: center;
                 }

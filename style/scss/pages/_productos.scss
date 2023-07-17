@@ -5,6 +5,10 @@ main {
         @include mobile {
             text-align: center;
         }
+
+        @include tablet {
+            text-align: center;
+        }
     }
 }
 
@@ -13,6 +17,11 @@ main {
     flex-wrap: wrap;
 
     @include mobile {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    @include tablet {
         gap: 10px;
         justify-content: center;
     }

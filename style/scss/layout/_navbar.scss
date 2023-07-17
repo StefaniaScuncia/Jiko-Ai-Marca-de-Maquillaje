@@ -26,7 +26,17 @@ nav {
         display: flex;
     }
 
+    @include tablet {
+        display: flex;
+    }
+
     @include mobile {
+        .navbar-dark {
+            background-color: #202020 !important;
+        }
+    }
+
+    @include tablet {
         .navbar-dark {
             background-color: #202020 !important;
         }
@@ -38,7 +48,20 @@ nav {
         }
     }
 
+    @include tablet {
+        .bg-dark {
+            background-color: #202020 !important;
+        }
+    }
+
     @include mobile {
+        .container-fluid {
+            --bs-bg-opacity: 1;
+            background-color: #202020;
+        }
+    }
+
+    @include tablet {
         .container-fluid {
             --bs-bg-opacity: 1;
             background-color: #202020;
@@ -53,7 +76,23 @@ nav {
         }
     }
 
+    @include tablet {
+        ul {
+            font-family: 'Courier Prime', monospace;
+            list-style: none;
+            color: #ab919e;
+        }
+    }
+
+
     @include mobile {
+        a {
+            color: #ab919e;
+            text-decoration: none;
+        }
+    }
+
+    @include tablet {
         a {
             color: #ab919e;
             text-decoration: none;
