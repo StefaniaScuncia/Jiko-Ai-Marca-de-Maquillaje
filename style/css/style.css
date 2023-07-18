@@ -156,6 +156,9 @@ nav a {
   padding: 5px;
   margin-top: 10px;
 }
+nav a:hover {
+  color: #dbbacc;
+}
 nav ul {
   font-family: "Courier Prime", monospace;
   list-style: none;
@@ -612,6 +615,9 @@ footer #cositasfooter .enlaces a, footer #cositasfooter .locales a, footer #cosi
   text-decoration: none;
   color: #ab919e;
 }
+footer #cositasfooter .enlaces a:hover, footer #cositasfooter .locales a:hover, footer #cositasfooter .datos a:hover {
+  color: #dbbacc;
+}
 footer #cositasfooter .enlaces ul, footer #cositasfooter .locales ul, footer #cositasfooter .datos ul {
   list-style: none;
   padding: 0%;
@@ -667,6 +673,9 @@ footer .copyyarriba {
 }
 footer .copyyarriba a {
   color: #ab919e;
+}
+footer .copyyarriba a:hover {
+  color: #dbbacc;
 }
 
 /*EstilosContactos*/
@@ -825,6 +834,7 @@ main h2 {
 #productosPage {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 @media (max-width: 425px) {
   #productosPage {
