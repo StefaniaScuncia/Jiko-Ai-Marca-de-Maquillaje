@@ -151,14 +151,12 @@ main {
 
             @include mobile {
                 border-radius: 10px;
-                width: 425px;
-                height: 425px;
+                width: auto;
             }
 
             @include tablet {
                 border-radius: 10px;
-                width: 768px;
-                height: 768px;
+                width: auto;
             }
         }
 

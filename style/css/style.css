@@ -425,15 +425,13 @@ main #locales img, main #nuevaColeccion img {
 @media (max-width: 425px) {
   main #locales img, main #nuevaColeccion img {
     border-radius: 10px;
-    width: 425px;
-    height: 425px;
+    width: auto;
   }
 }
 @media (max-width: 768px) {
   main #locales img, main #nuevaColeccion img {
     border-radius: 10px;
-    width: 768px;
-    height: 768px;
+    width: auto;
   }
 }
 main #locales .divlocales, main #nuevaColeccion .divlocales {
