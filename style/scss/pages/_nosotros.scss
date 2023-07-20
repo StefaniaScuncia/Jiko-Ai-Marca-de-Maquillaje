@@ -96,5 +96,18 @@ main {
             }
 
         }
+
+        img {
+            width: 50%;
+            object-fit: cover;
+
+            @include mobile {
+                width: auto;
+            }
+
+            @include tablet {
+                width: auto;
+            }
+        }
     }
 }

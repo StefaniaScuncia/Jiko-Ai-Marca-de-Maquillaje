@@ -145,9 +145,9 @@ main {
         }
 
         img {
-            width: 750px;
-            height: 750px;
+            width: 50%;
             border-radius: 0 10px 10px 0;
+            object-fit: cover;
 
             @include mobile {
                 border-radius: 10px;
@@ -215,6 +215,7 @@ main {
 
     & img {
         background-color: #f3eef1;
+        object-fit: cover;
 
         @include mobile {
             margin-left: auto;

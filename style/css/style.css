@@ -418,9 +418,9 @@ main #locales, main #nuevaColeccion {
   }
 }
 main #locales img, main #nuevaColeccion img {
-  width: 750px;
-  height: 750px;
+  width: 50%;
   border-radius: 0 10px 10px 0;
+  object-fit: cover;
 }
 @media (max-width: 425px) {
   main #locales img, main #nuevaColeccion img {
@@ -494,6 +494,7 @@ main #locales h1, main #nuevaColeccion h1 {
 }
 #nuevaColeccion img {
   background-color: #f3eef1;
+  object-fit: cover;
 }
 @media (max-width: 425px) {
   #nuevaColeccion img {
@@ -966,6 +967,20 @@ main #palabrasFounder .palabrasTextual {
   main #palabrasFounder .palabrasTextual {
     padding: 20px;
     text-align: center;
+  }
+}
+main #palabrasFounder img {
+  width: 50%;
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  main #palabrasFounder img {
+    width: auto;
+  }
+}
+@media (max-width: 768px) {
+  main #palabrasFounder img {
+    width: auto;
   }
 }
 
